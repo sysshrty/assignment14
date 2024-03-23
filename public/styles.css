@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  #crafts-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .craft-card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 20px;
+    max-width: 300px;
+  }
+  
+  .craft-card img {
+    max-width: 100%;
+  }
+  
+  .craft-card h2 {
+    margin-top: 0;
+  }
+  
+  .craft-card p {
+    margin-top: 0;
+  }
+  
+  .craft-card ul {
+    padding-left: 20px;
+    margin-top: 5px;
+  }
+  
+  .craft-card li {
+    list-style-type: disc;
+  }
+    /* styles.css */
+
+/* Flex container */
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  /* Flex items */
+  .flex-item-left {
+    flex: 50%; /* Set the width to 50% of the container */
+  }
+  
+  .flex-item-right {
+    flex: 50%; /* Set the width to 50% of the container */
+  }
+  
+  @media (max-width: 600px) {
+    .craft-card {
+      max-width: 100%;
+    }
+    .flex-item-right, 
+    .flex-item-left {
+      flex: 100%; /* Set the width to 100% of the container */
+    }
+  }
+
+  
+  
