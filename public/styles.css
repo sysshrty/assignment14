@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
   }
@@ -45,21 +45,63 @@ body {
   .craft-card li {
     list-style-type: disc;
   }
-    /* styles.css */
 
 /* Flex container */
 .flex-container {
     display: flex;
     flex-wrap: wrap;
   }
-  
-  /* Flex items */
   .flex-item-left {
-    flex: 50%; /* Set the width to 50% of the container */
+    flex: 50%; 
   }
   
   .flex-item-right {
-    flex: 50%; /* Set the width to 50% of the container */
+    flex: 50%; 
+  }
+
+  /* The Modal */
+  .modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%; 
+    overflow: auto;
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+  }
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    display: flex; 
+  }
+  
+  /* (Image) */
+  .modal-left {
+    flex: 1; 
+  }
+
+  .modal-right {
+    flex: 2; 
+  }
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
   }
   
   @media (max-width: 600px) {
@@ -68,7 +110,7 @@ body {
     }
     .flex-item-right, 
     .flex-item-left {
-      flex: 100%; /* Set the width to 100% of the container */
+      flex: 100%; 
     }
   }
 

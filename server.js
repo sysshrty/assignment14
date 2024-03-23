@@ -7,13 +7,13 @@ app.get("/", (req, res) => {
 });
 
 app.get("/api/crafts", (req, res) => {
-    res.json(crafts); // Send JSON response
+    res.json(crafts); 
   });
 
 const crafts = [
   {
       "name": "Beaded JellyFish",
-      img: "images/bead-jellyfish.jpg",
+      "image": "images/bead-jellyfish.jpg",
       "description": "Create a hanging jellyfish using eggcartons and multicolored beads",
       "supplies": [
           "string",
@@ -64,7 +64,7 @@ const crafts = [
   },
   {
       "name": "School Themed Mason Jars",
-      "image": "decorated-jars.jpeg",
+      "image": "images/decorated-jars.jpeg",
       "description": "Let's make mason jars to ",
       "supplies": [
           "Construction Paper",
@@ -75,7 +75,7 @@ const crafts = [
   },
   {
       "name": "Egg Carton Flowers",
-      "image": "egg-carton-flowers.jpg",
+      "image": "images/egg-carton-flowers.jpg",
       "description": "Make a beautiful bouquet with egg cartons and other items you can find around the house",
       "supplies": [
           "Egg Cartons",
@@ -87,7 +87,7 @@ const crafts = [
   },
   {
       "name": "Finger Puppets",
-      "image": "finger-puppets.jpeg",
+      "image": "images/finger-puppets.jpeg",
       "description": "These little critters are easy to make, and will entertain your little one while they make a show.",
       "supplies": [
           "Pom-poms",
@@ -97,7 +97,7 @@ const crafts = [
   },
   {
       "name": "Ribbon Flower Headbands",
-      "image": "flower-headbands.jpg",
+      "image": "images/flower-headbands.jpg",
       "description": "Let your little one show off her new style with these pretty and customizable headbands",
       "supplies": [
           "Plain headband",
@@ -108,7 +108,7 @@ const crafts = [
   },
   {
       "name": "Hand Print Fish Puppets",
-      "image": "handprint-fish.jpg",
+      "image": "images/handprint-fish.jpg",
       "description": "We all need to take every opportunity we can to remember those tiny hands, and what better way to do it, then to make fish puppets!",
       "supplies": [
           "Popsicle sticks",
@@ -119,7 +119,7 @@ const crafts = [
   },
   {
       "name": "Hand Print Tree",
-      "image": "hand-print-tree.jpeg",
+      "image": "images/hand-print-tree.jpeg",
       "description": "This is a fun way to get your little one into finger painting.",
       "supplies": [
           "Watercolor Paper",
@@ -128,7 +128,7 @@ const crafts = [
   },
   {
       "name": "Melted Bead Bowl",
-      "image": "melted-bead-bowl.jpeg",
+      "image": "images/melted-bead-bowl.jpeg",
       "description": "All they need to do is shape their faviorte design, warm it up and they have a brand new bowl.",
       "supplies": [
           "Beads",
@@ -138,7 +138,7 @@ const crafts = [
   },
   {
       "name": "Monster Kites",
-      "image": "monster-rolls.jpg",
+      "image": "images/monster-rolls.jpg",
       "description": "Let's make those scary toilet paper rolls fly!",
       "supplies": [
           "Toilet paper rolls",
@@ -149,7 +149,7 @@ const crafts = [
   },
   {
       "name": "Pool Noodle Boats",
-      "image": "noodle-boats.png",
+      "image": "images/noodle-boats.png",
       "description": "Let's make a boat that will actually float, due to the floating bottom of a pool noodle.",
       "supplies": [
           "Pool Noodle",
@@ -159,7 +159,7 @@ const crafts = [
   },
   {
       "name": "Paper Plate Bees",
-      "image": "paper-plate-bees.jpeg",
+      "image": "images/paper-plate-bees.jpeg",
       "description": "Let's have fun with making cute little bees, or big bees actually.",
       "supplies": [
           "Paper Plate",
@@ -172,7 +172,7 @@ const crafts = [
   },
   {
       "name": "Paper Plate Dinosaurs",
-      "image": "paper-plate-dinosaurs.jpg",
+      "image": "images/paper-plate-dinosaurs.jpg",
       "description": "Who would have thought that half a paper plate would be the base of a dinosaur.",
       "supplies": [
           "Paper Plate",
@@ -183,7 +183,7 @@ const crafts = [
   },
   {
       "name": "Porcupine Leafs",
-      "image": "porcupine-leaf.webp",
+      "image": "images/porcupine-leaf.webp",
       "description": "Let's turn an ordinary paper plate into a fun filled mask.",
       "supplies": [
           "Leafs",
@@ -194,7 +194,7 @@ const crafts = [
   },
   {
       "name": "Rainbow Cloud",
-      "image": "rainbow-cloud.webp",
+      "image": "images/rainbow-cloud.webp",
       "description": "Some cotton and color and you'll have a beautiful rainbow.",
       "supplies": [
           "Paper Plate",
@@ -204,7 +204,7 @@ const crafts = [
   },
   {
       "name": "Fun Shaped Crayons",
-      "image": "shaped-crayons.jpg",
+      "image": "images/shaped-crayons.jpg",
       "description": "Let's melt some crayons together and let them harden into fun shapes.",
       "supplies": [
           "Broken Crayons",
@@ -213,7 +213,7 @@ const crafts = [
   },
   {
       "name": "Straw Farris Wheel",
-      "image": "straw-faris-wheel.jpg",
+      "image": "images/straw-faris-wheel.jpg",
       "description": "It might be too small to ride, but this farris wheel is the most colorful of all.",
       "supplies": [
           "Multicolored straws",
@@ -222,7 +222,7 @@ const crafts = [
   },
   {
       "name": "Sunny String",
-      "image": "sun-string.jpg",
+      "image": "images/sun-string.jpg",
       "description": "Let's practice our fine motor skills while we weave the string into a fun sun.",
       "supplies": [
           "Yellow String",
@@ -233,7 +233,7 @@ const crafts = [
   },
   {
       "name": "Tissue Ballerinas",
-      "image": "tisue-dancer.jpeg",
+      "image": "images/tisue-dancer.jpeg",
       "description": "These beautiful dancers will look great on display",
       "supplies": [
           "Pipe cleaner",
@@ -243,7 +243,7 @@ const crafts = [
   },
   {
       "name": "Toilet Paper Roll Animals",
-      "image": "toilet-paper-animals.jpeg",
+      "image": "images/toilet-paper-animals.jpeg",
       "description": "These beautiful dancers will look great on display",
       "supplies": [
           "Toilet Paper Rolls",
