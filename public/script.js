@@ -87,7 +87,7 @@ const showCrafts = async() => {
         section.append(h3);
 
         const img = document.createElement("img");
-        img.src = "http://localhost:3000/" + crafts.img;
+        img.src = "https://assignment14-fsck.onrender.com" + crafts.img;
         section.append(img);
     });
 };
