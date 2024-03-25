@@ -18,8 +18,6 @@ body {
   }
   
   .craft-card {
-    border: 1px solid #ccc;
-    border-radius: 5px;
     margin: 10px;
     padding: 20px;
     max-width: 300px;
@@ -76,8 +74,7 @@ body {
   .modal-content {
     background-color: #fefefe;
     margin: auto;
-    padding: 20px;
-    border: 1px solid #888;
+    padding: 5px;
     width: 80%;
     display: flex; 
   }

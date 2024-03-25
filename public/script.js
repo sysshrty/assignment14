@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 craftCard.classList.add("craft-card");
 
                 const img = document.createElement("img");
-                img.src = `http://localhost:3000/${craft.image}`;
+                img.src = "https://assignment14-fsck.onrender.com" + craft.image;
                 img.alt = craft.name;
 
                 img.addEventListener("click", () => {
@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", () => {
                         modalSupplies.appendChild(listItem);
                     });
 
-                    modalImage.src = `http://localhost:3000/${craft.image}`;
+                    modalImage.src = `https://assignment14-fsck.onrender.com${craft.image}`;
 
                     modal.style.display = "block";
                 });
@@ -58,40 +58,3 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     };
 });
-
-/*
-const getCrafts = async() => {
-    try {
-        return (await fetch("http://localhost:3000/api/crafts")).json();
-    } catch(error){
-        console.log("error retrieving data");
-        return "";
-    }
-};
-
-const showCrafts = async() => {
-    const craftsJSON = await getCrafts();
-    const craftsDiv = document.getElementById("crafts-div");
-
-    if(craftsJSON == ""){
-        craftsDiv.innerHTML = "Sorry, crafts";
-        return;
-    }
-
-    //now loop through the json
-    craftsJSON.forEach((crafts)=>{
-        const section = document.createElement("section");
-        craftsDiv.append(section);
-
-        const h3 = document.createElement("h3");
-        h3.innerHTML = crafts.name;
-        section.append(h3);
-
-        const img = document.createElement("img");
-        img.src = "http://localhost:3000/" + crafts.img;
-        section.append(img);
-    });
-};
-
-showCrafts();
-*/
