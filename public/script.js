@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const craftsList = document.getElementById("crafts-list");
 
     // Fetch 
-    fetch("http://localhost:3000/api/crafts")
+    fetch("https://assignment14-fsck.onrender.com")
         .then(response => response.json())
         .then(crafts => {
             crafts.forEach(craft => {
@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", () => {
                         modalSupplies.appendChild(listItem);
                     });
 
-                    modalImage.src = `http://localhost:3000/${craft.image}`;
+                    modalImage.src = "./images/" + craft.image;
 
                     modal.style.display = "block";
                 });
@@ -61,7 +61,7 @@ document.addEventListener("DOMContentLoaded", () => {
 */
 const getCrafts = async() => {
     try {
-        return (await fetch("https://assignment14-fsck.onrender.com")).json();
+        return (await fetch("./api/crafts")).json();
     } catch(error){
         console.log("error retrieving data");
         return "";
@@ -87,7 +87,7 @@ const showCrafts = async() => {
         section.append(h3);
 
         const img = document.createElement("img");
-        img.src = "https://assignment14-fsck.onrender.com" + crafts.img;
+        img.src = "http://localhost:3000/" + crafts.img;
         section.append(img);
     });
 };
