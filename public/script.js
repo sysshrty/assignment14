@@ -1,3 +1,4 @@
+/*
 document.addEventListener("DOMContentLoaded", () => {
     const craftsList = document.getElementById("crafts-list");
 
@@ -57,3 +58,38 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     };
 });
+*/
+const getCrafts = async() => {
+    try {
+        return (await fetch("https://assignment14-fsck.onrender.com")).json();
+    } catch(error){
+        console.log("error retrieving data");
+        return "";
+    }
+};
+
+const showCrafts = async() => {
+    const craftsJSON = await getCrafts();
+    const craftsDiv = document.getElementById("crafts-div");
+
+    if(craftsJSON == ""){
+        craftsDiv.innerHTML = "Sorry, crafts";
+        return;
+    }
+
+    //now loop through the json
+    craftsJSON.forEach((crafts)=>{
+        const section = document.createElement("section");
+        craftsDiv.append(section);
+
+        const h3 = document.createElement("h3");
+        h3.innerHTML = crafts.name;
+        section.append(h3);
+
+        const img = document.createElement("img");
+        img.src = "http://localhost:3000/" + crafts.img;
+        section.append(img);
+    });
+};
+
+showCrafts();

@@ -7,11 +7,9 @@ app.get("/", (req, res) => {
 });
 
 app.get("/api/crafts", (req, res) => {
-    res.json(crafts); 
-  });
-
-const crafts = [
-  {
+    console.log("Someone is requesting our api");
+    const crafts = [];
+      crafts[0] = {
       "name": "Beaded JellyFish",
       "image": "images/bead-jellyfish.jpg",
       "description": "Create a hanging jellyfish using eggcartons and multicolored beads",
@@ -20,8 +18,8 @@ const crafts = [
           "egg cartons",
           "beads"
       ]
-  },
-  {
+      };
+      crafts[1] = {
       "name": "Character Bookmarks",
       "image": "images/bookmarks.jpeg",
       "description": "Create a little birdy bookmark to always remin you were you were",
@@ -30,8 +28,8 @@ const crafts = [
           "orange construction paper",
           "black construction paper"
       ]
-  },
-  {
+      };
+      crafts[2] = {
       "name": "Button Flowers",
       "image": "images/button-flowers.jpeg",
       "description": "Create a fun bouquet of flowers with your favorite buttons",
@@ -41,17 +39,16 @@ const crafts = [
           "green straws",
           "ribbon"
       ]
-  },
-  {
+      };
+      crafts[3] = {
       "name": "Cheerio Necklaces",
       "image": "images/cheerio-necklace.webp",
       "description": "Create a fun and edible necklace",
       "supplies": [
           "Cheerios or Fruit Loops",
           "Elastic string"
-      ]
-  },
-  {
+      ]};
+      crafts[4] = {
       "name": "Cotton Ball Cupcakes",
       "image": "/images/cotton-ball-cupcakes.webp",
       "description": "Decorate your fun filled cupcake however you want.",
@@ -60,9 +57,8 @@ const crafts = [
           "Cotton Balls",
           "Black Sharpie",
           "Glitter"
-      ]
-  },
-  {
+      ]};
+      crafts[5] = {
       "name": "School Themed Mason Jars",
       "image": "images/decorated-jars.jpeg",
       "description": "Let's make mason jars to ",
@@ -71,9 +67,8 @@ const crafts = [
           "Cotton Balls",
           "Black Sharpie",
           "Glitter"
-      ]
-  },
-  {
+      ]};
+      crafts[6] = {
       "name": "Egg Carton Flowers",
       "image": "images/egg-carton-flowers.jpg",
       "description": "Make a beautiful bouquet with egg cartons and other items you can find around the house",
@@ -83,9 +78,8 @@ const crafts = [
           "Green Pipe Cleaner",
           "Ribbon",
           "Canvas"
-      ]
-  },
-  {
+      ]};
+      crafts[7] = {
       "name": "Finger Puppets",
       "image": "images/finger-puppets.jpeg",
       "description": "These little critters are easy to make, and will entertain your little one while they make a show.",
@@ -93,9 +87,8 @@ const crafts = [
           "Pom-poms",
           "Googly Eyes",
           "Pipe Cleaner"
-      ]
-  },
-  {
+      ]};
+      crafts[8] = {
       "name": "Ribbon Flower Headbands",
       "image": "images/flower-headbands.jpg",
       "description": "Let your little one show off her new style with these pretty and customizable headbands",
@@ -104,9 +97,8 @@ const crafts = [
           "Ribbon",
           "Buttons",
           "Gems"
-      ]
-  },
-  {
+      ]};
+      crafts[9] = {
       "name": "Hand Print Fish Puppets",
       "image": "images/handprint-fish.jpg",
       "description": "We all need to take every opportunity we can to remember those tiny hands, and what better way to do it, then to make fish puppets!",
@@ -115,18 +107,16 @@ const crafts = [
           "Cardstock",
           "Gems",
           "Googly Eyes"
-      ]
-  },
-  {
+      ]};
+      crafts[10] = {
       "name": "Hand Print Tree",
       "image": "images/hand-print-tree.jpeg",
       "description": "This is a fun way to get your little one into finger painting.",
       "supplies": [
           "Watercolor Paper",
           "Finger paint"
-      ]
-  },
-  {
+      ]};
+      crafts[11] = {
       "name": "Melted Bead Bowl",
       "image": "images/melted-bead-bowl.jpeg",
       "description": "All they need to do is shape their faviorte design, warm it up and they have a brand new bowl.",
@@ -134,9 +124,8 @@ const crafts = [
           "Beads",
           "Bowl",
           "Parchment paper"
-      ]
-  },
-  {
+      ]};
+      crafts[12] = {
       "name": "Monster Kites",
       "image": "images/monster-rolls.jpg",
       "description": "Let's make those scary toilet paper rolls fly!",
@@ -145,9 +134,8 @@ const crafts = [
           "Paint",
           "Tissue Paper",
           "String"
-      ]
-  },
-  {
+      ]};
+      crafts[13] = {
       "name": "Pool Noodle Boats",
       "image": "images/noodle-boats.png",
       "description": "Let's make a boat that will actually float, due to the floating bottom of a pool noodle.",
@@ -155,9 +143,8 @@ const crafts = [
           "Pool Noodle",
           "Straw",
           "Plastic Paper"
-      ]
-  },
-  {
+      ]};
+      crafts[14] = {
       "name": "Paper Plate Bees",
       "image": "images/paper-plate-bees.jpeg",
       "description": "Let's have fun with making cute little bees, or big bees actually.",
@@ -168,9 +155,8 @@ const crafts = [
           "Black pom poms",
           "Yellow Paint",
           "Black Paint"
-      ]
-  },
-  {
+      ]};
+      crafts[15] = {
       "name": "Paper Plate Dinosaurs",
       "image": "images/paper-plate-dinosaurs.jpg",
       "description": "Who would have thought that half a paper plate would be the base of a dinosaur.",
@@ -179,9 +165,8 @@ const crafts = [
           "Paint",
           "Close Pins",
           "Construction Paper"
-      ]
-  },
-  {
+      ]};
+      crafts[16] = {
       "name": "Porcupine Leafs",
       "image": "images/porcupine-leaf.webp",
       "description": "Let's turn an ordinary paper plate into a fun filled mask.",
@@ -190,9 +175,8 @@ const crafts = [
           "Berries",
           "Acorns",
           "Construction Paper"
-      ]
-  },
-  {
+      ]};
+      crafts[17] = {
       "name": "Rainbow Cloud",
       "image": "images/rainbow-cloud.webp",
       "description": "Some cotton and color and you'll have a beautiful rainbow.",
@@ -200,27 +184,24 @@ const crafts = [
           "Paper Plate",
           "Cotton Balls",
           "Construction Paper"
-      ]
-  },
-  {
+      ]};
+      crafts[18] = {
       "name": "Fun Shaped Crayons",
       "image": "images/shaped-crayons.jpg",
       "description": "Let's melt some crayons together and let them harden into fun shapes.",
       "supplies": [
           "Broken Crayons",
           "Mold"
-      ]
-  },
-  {
+      ]};
+      crafts[19] = {
       "name": "Straw Farris Wheel",
       "image": "images/straw-faris-wheel.jpg",
       "description": "It might be too small to ride, but this farris wheel is the most colorful of all.",
       "supplies": [
           "Multicolored straws",
           "Platform"
-      ]
-  },
-  {
+      ]};
+      crafts[20] = {
       "name": "Sunny String",
       "image": "images/sun-string.jpg",
       "description": "Let's practice our fine motor skills while we weave the string into a fun sun.",
@@ -229,9 +210,8 @@ const crafts = [
           "Paper Plate",
           "Yellow construction paper",
           "Yellow and Orange beads"
-      ]
-  },
-  {
+      ]};
+      crafts[21] = {
       "name": "Tissue Ballerinas",
       "image": "images/tisue-dancer.jpeg",
       "description": "These beautiful dancers will look great on display",
@@ -239,9 +219,8 @@ const crafts = [
           "Pipe cleaner",
           "Tissue Paper",
           "Elastics"
-      ]
-  },
-  {
+      ]};
+      crafts[22] = {
       "name": "Toilet Paper Roll Animals",
       "image": "images/toilet-paper-animals.jpeg",
       "description": "These beautiful dancers will look great on display",
@@ -249,9 +228,8 @@ const crafts = [
           "Toilet Paper Rolls",
           "Construction Paper",
           "Googly Eyes"
-      ]
-  },
-  {
+      ]};
+      crafts[23] = {
       "name": "Toilet Paper Butterfly",
       "image": "images/toilet-paper-butterfly.jpg",
       "description": "Such a sweat little flyer",
@@ -260,18 +238,17 @@ const crafts = [
           "Construction Paper",
           "Googly Eyes",
           "Buttons"
-      ]
-  },
-  {
+      ]};
+      crafts[24] = {
       "name": "Valentines Jar",
       "image": "images/valentines-jar.webp",
       "description": "So much hearts all in one",
       "supplies": [
           "Clay",
           "Glitter"
-      ]
-  }
-]
+      ]};
+      res.json(crafts);
+  });
 
 app.listen(3000, () => {
     console.log("Listening on port 3000");
